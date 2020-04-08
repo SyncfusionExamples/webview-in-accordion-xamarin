@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AccordionXamarin"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Accordion;assembly=Syncfusion.Expander.XForms"
+             x:Class="AccordionXamarin.MainPage">
+
+    <ContentPage.Content>
+        <syncfusion:SfAccordion ExpandMode="SingleOrNone">
+            <syncfusion:SfAccordion.Items>
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid>
+                            <Label TextColor="#495F6E" Text="Android" Margin="5" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+                    <syncfusion:AccordionItem.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <WebView HeightRequest="250" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="https://developers.google.com/android" />
+                        </StackLayout>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid>
+                            <Label TextColor="#495F6E" Text="Microsoft" Margin="5" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+                    <syncfusion:AccordionItem.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <WebView HeightRequest="250" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="https://www.microsoft.com/en-in" />
+                        </StackLayout>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid>
+                            <Label TextColor="#495F6E" Text="Syncfusion" Margin="5" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+                    <syncfusion:AccordionItem.Content>
+                        <StackLayout Padding="10,10,10,10" BackgroundColor="#FFFFFF">
+                            <WebView HeightRequest="250" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="https://www.syncfusion.com/" />
+                        </StackLayout>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+            </syncfusion:SfAccordion.Items>
+        </syncfusion:SfAccordion>
+    </ContentPage.Content>
+</ContentPage>
